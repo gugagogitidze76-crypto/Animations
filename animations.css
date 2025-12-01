@@ -102,3 +102,20 @@ div.champ {
     transform: rotate(0deg);
   }
 }
+
+div.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in forwards;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: self-end;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 50;
+  }
+}
