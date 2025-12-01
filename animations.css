@@ -4,20 +4,51 @@
 }
 
 .Anime {
-  width: 200px;
-  width: 200px;
+  width: 400px;
+  height: 280px;
+  margin: 180px;
   background-color: burlywood;
   color: white;
-  transform: translate(620px, 100px);
   animation-name: firstanime;
-  animation-duration: 4s;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
 
 @keyframes firstanime {
   from {
     background-color: darkblue;
+    transform: rotate(0deg);
+    /* width: 400px;
+    height: 200px; */
   }
   to {
     background-color: darkgreen;
+    transform: rotate(180deg);
+    /* width: 450px;
+    height: 200px; */
+  }
+}
+
+.box {
+  width: 400px;
+  height: 280px;
+  margin: 180px;
+  position: relative;
+  background-color: burlywood;
+  color: white;
+  animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: translateY(0);
+  }
+
+  30% {
+    transform: translateY(30px);
+  }
+
+  60% {
+    transform: translateY(0px);
   }
 }
